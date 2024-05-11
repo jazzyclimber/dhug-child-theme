@@ -1,7 +1,5 @@
 const { setField, showIfBooleanFieldTrue, booleanField, colorField } = require('./fields/fieldHelpers')();
 
-
-
 module.exports = fieldOptions => {
   return [
     setField(booleanField, {
@@ -43,6 +41,5 @@ module.exports = fieldOptions => {
       },
       visibility: showIfBooleanFieldTrue("override_light")
     })
-
   ];
 };
